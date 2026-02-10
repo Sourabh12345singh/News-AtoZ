@@ -1,9 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="navbar fixed-top navbar-expand-lg custom-navbar">
+    <nav
+      className="navbar fixed-top navbar-expand-lg"
+      style={{ backgroundColor: "#031a31", color: "white" }}
+    >
       <div className="container-fluid">
         <Link className="navbar-brand" to="/" style={{ color: "white" }}>
           newsAtoZ
@@ -23,16 +26,6 @@ const Navbar = () => {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <Link
-                className="nav-link active"
-                style={{ color: "white" }}
-                aria-current="page"
-                to="/"
-              >
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
                 className="nav-link"
                 to="/business"
                 style={{ color: "white" }}
@@ -47,15 +40,6 @@ const Navbar = () => {
                 style={{ color: "white" }}
               >
                 Entertainment
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                className="nav-link"
-                to="/general"
-                style={{ color: "white" }}
-              >
-                General
               </Link>
             </li>
             <li className="nav-item">
@@ -100,4 +84,4 @@ const Navbar = () => {
     </nav>
   );
 };
-export default Navbar
+export default Navbar;
